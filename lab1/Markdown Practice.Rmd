@@ -1,0 +1,40 @@
+---
+title: "R Markdown Practice"
+author: "Maxen Hamelynck"
+date: "2023-01-11"
+output: html_document
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#JOe ##JOE ###JOE *italics* **bold**
+
+#WOWIIEE\\
+
+[Youtube Mayne](https://www.youtube.com/)
+
+[Maxen](mailto:mjhamel@ucdavis.edu)
+
+**JOE MAMA** '\#'Title t=5 5\^t/7+2 4+4
+
+```{r}
+t=5
+5^t/7+2
+4+4
+
+```
+
+```{r}
+#install.packages("tidyverse")
+library("tidyverse")
+```
+
+```{r}
+ggplot(mtcars, aes(x = factor(cyl))) +
+    geom_bar()
+```
