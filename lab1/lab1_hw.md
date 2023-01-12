@@ -1,7 +1,7 @@
 ---
 title: "Lab 1 Homework"
 author: "Maxen Hamelynck"
-date: "2023-01-10"
+date: "2023-01-12"
 output:
   html_document: 
     theme: spacelab
@@ -46,7 +46,7 @@ R is the actual programming language, while RStudio is the GUI (the interface) w
 
 **5. Did any of the results in #4 surprise you? Write two programs that calculate each expression such that the result for the first example is 4 and the second example is 16.**
 
-The results were not surprising.
+The results were not that surprising
 
 
 ```r
