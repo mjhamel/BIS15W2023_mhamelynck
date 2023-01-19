@@ -1,0 +1,54 @@
+---
+title: "lab3 warmup"
+author: "Maxen Hamelynck"
+date: "2023-01-17"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+1.
+```{r}
+height_plants <- c(30.7,37.6, 28.4, NA, 33.2)
+
+```
+2.
+```{r}
+mass_plants <- c(4, 5.2, 3.7, NA, 4.6)
+
+
+```
+3.
+```{r}
+nomers <- c('plant 1', 'plant 2', 'plant 3', 'plant 4', 'plant 5')
+measures <- c('height', 'weight')
+
+```
+
+```{r}
+combino <- c(height_plants, mass_plants)
+combino
+```
+```{r}
+plant_matrix <- matrix(combino, nrow=5, byrow=F)
+plant_matrix
+```
+
+```{r}
+colnames(plant_matrix) <- measures
+rownames(plant_matrix) <-  nomers 
+plant_matrix
+```
+### 8. Calculate column means
+
+```{r}
+plantavgs <- colMeans(plant_matrix, na.rm=T)
+plantavgs
+```
+9. add to matrix
+```{r}
+plant_matrixfinal <- rbind(plant_matrix, plantavgs)
+plant_matrixfinal
+```
+
